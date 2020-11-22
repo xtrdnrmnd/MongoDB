@@ -48,8 +48,8 @@ public class MongoDB {
                     else {
                         students.findAndRemove(query2);
                         System.out.println("Пользователь удален!");
-                        break;
                     }
+                    break;
                 case 3: // View all the documents in the collection
                     DBObject query3 = new BasicDBObject();
                     DBCursor cursor3 = students.find(query3);
